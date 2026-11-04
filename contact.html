@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Liên hệ | MEBE</title>
+    <meta
+      name="description"
+      content="Liên hệ MEBE để được hỗ trợ và tư vấn sản phẩm."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header"></header>
+    <main>
+      <section class="contact-hero">
+        <div class="container">
+          <p class="eyebrow">LIÊN HỆ MEBE</p>
+          <h1>MEBE luôn<br />sẵn lòng nghe bạn.</h1>
+          <p>
+            Để lại lời nhắn, chúng mình sẽ phản hồi trong thời gian sớm nhất.
+          </p>
+        </div>
+      </section>
+      <section class="container contact-layout">
+        <aside class="contact-details">
+          <h2>Ghé MEBE nhé</h2>
+          <div>
+            <span>⌖</span>
+            <p><b>Cửa hàng</b>45 Đường Hoa Nắng, Quận 3, TP. HCM</p>
+          </div>
+          <div>
+            <span>◷</span>
+            <p><b>Thời gian mở cửa</b>08:00 – 21:30, mỗi ngày</p>
+          </div>
+          <div>
+            <span>✆</span>
+            <p><b>Hotline</b>090 123 4567</p>
+          </div>
+          <div>
+            <span>✉</span>
+            <p><b>Email</b>hello@mebe.vn</p>
+          </div>
+        </aside>
+        <form class="contact-form" id="contact-form">
+          <h2>Gửi lời nhắn</h2>
+          <label
+            >Họ và tên<input
+              required
+              name="name"
+              placeholder="Nhập họ tên của bạn" /></label
+          ><label
+            >Số điện thoại<input
+              required
+              name="phone"
+              type="tel"
+              placeholder="Nhập số điện thoại" /></label
+          ><label
+            >Lời nhắn<textarea
+              required
+              name="message"
+              rows="4"
+              placeholder="MEBE có thể hỗ trợ bạn điều gì?"
+            ></textarea></label
+          ><button class="button" type="submit">Gửi lời nhắn</button>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

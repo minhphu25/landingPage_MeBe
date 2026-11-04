@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Em bé | MEBE</title>
+    <meta
+      name="description"
+      content="Sản phẩm dịu lành, tiện dụng dành cho bé."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="baby">
+    <header class="site-header"></header>
+    <main class="category-main">
+      <section class="category-hero baby-hero">
+        <div class="container category-hero-content">
+          <p class="eyebrow">GÓC LỚN KHÔN</p>
+          <h1>Bé vui khỏe,<br />cả nhà an tâm</h1>
+          <p>
+            Chọn những điều mềm mại và lành tính để hành trình lớn khôn của con
+            thật nhiều niềm vui.
+          </p>
+        </div>
+      </section>
+      <section class="container product-section">
+        <div class="product-heading">
+          <div>
+            <p class="eyebrow">DANH MỤC SẢN PHẨM</p>
+            <h2>Sản phẩm cho em bé</h2>
+          </div>
+          <p id="product-count"></p>
+        </div>
+        <div class="shop-toolbar">
+          <label class="search-box"
+            ><span>⌕</span
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="Tìm sản phẩm..."
+          /></label>
+          <div class="filter-wrap">
+            <label for="category-filter">Lọc theo</label
+            ><select id="category-filter">
+              <option value="all">Tất cả danh mục</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <nav class="pagination" id="pagination" aria-label="Phân trang"></nav>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

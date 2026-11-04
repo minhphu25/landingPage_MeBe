@@ -1,0 +1,1122 @@
+﻿:root {
+  --primary: #4d2d50;
+  --secondary: #f8c9ca;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --ink: #402b43;
+  --muted: #806d7d;
+  --brand: #4d2d50;
+  --accent: #f47786;
+  --white: #ffffff;
+  --line: #f7d4d0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #ee3e80;
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.container {
+  width: min(1200px, calc(100% - 48px));
+  margin: auto;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  line-height: 1.18;
+  font-weight: 900;
+}
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  letter-spacing: -0.04em;
+}
+h2 {
+  font-size: clamp(2rem, 3.3vw, 3rem);
+  letter-spacing: -0.035em;
+}
+h3 {
+  font-size: 1.25rem;
+}
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  font-weight: 800;
+  color: var(--brand);
+  margin-bottom: 12px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 25px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brand);
+  color: white;
+  text-decoration: none;
+  font:
+    800 0.9rem "Nunito",
+    "Be Vietnam Pro",
+    sans-serif;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 8px 18px rgba(77, 45, 80, 0.16);
+}
+.button:hover {
+  background: #ee3e80;
+  transform: translateY(-2px);
+  box-shadow: 0 11px 22px rgba(77, 45, 80, 0.22);
+}
+.text-link {
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+}
+.text-link span {
+  font-size: 1.25em;
+  margin-left: 5px;
+}
+.site-header {
+  padding: 8px 0 12px;
+  background: #fff1e9;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-topline {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.header-topline a {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 30px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: 0 8px 22px rgba(77, 45, 80, 0.06);
+}
+.brand {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  color: #ee3e80;
+  text-decoration: none;
+}
+.site-header .brand {
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+.brand i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #4d2d50;
+  border-radius: 50%;
+  margin: 0 2px 9px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.87rem;
+  padding: 8px 13px;
+  border-radius: 999px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+  background: #ee3e80;
+}
+/* .nav-contact {
+  padding: 9px 16px;
+  background: var(--primary);
+  border-radius: 8px;
+} */
+.menu-btn {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: var(--brand);
+}
+.hero {
+  padding: 48px 0 84px;
+  background:
+    radial-gradient(
+      ellipse at 82% 48%,
+      rgba(248, 201, 202, 0.42),
+      transparent 38%
+    ),
+    var(--bg);
+}
+.hero.home-hero {
+  background: #fff1e9;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 54px;
+}
+.hero-copy h1 {
+  max-width: 610px;
+  color: #ee3e80;
+}
+.hero-copy > p:not(.eyebrow) {
+  max-width: 505px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 31px 0 43px;
+}
+.trust-row {
+  display: flex;
+  gap: 25px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.trust-row span + span {
+  border-left: 1px solid var(--line);
+  padding-left: 25px;
+}
+.trust-row b {
+  color: var(--ink);
+  display: block;
+}
+.image-frame {
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: 14px 15px 0 rgba(248, 201, 202, 0.8);
+}
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.hero-image {
+  height: clamp(350px, 38vw, 510px);
+  border-radius: 42% 24px 42% 24px;
+  box-shadow: none;
+}
+.audience-section {
+  padding: 78px 0 92px;
+}
+.audience-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+.audience-heading p {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.audience-heading p span {
+  color: var(--primary);
+  font-size: 0.76em;
+  padding: 0 10px;
+}
+.audience-heading i {
+  display: block;
+  margin-top: -3px;
+  color: var(--secondary);
+  font-style: normal;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+}
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.audience-card {
+  --card-tint: #e3f0f8;
+  --card-color: #239ed5;
+  --card-bg: #f3f8fc;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--card-tint);
+  border-radius: 20px;
+  background: var(--card-bg);
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(77, 45, 80, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.audience-card-image {
+  position: relative;
+  height: 245px;
+  margin: 10px 10px 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 255, 255, 0.8) 0 42px,
+      transparent 43px
+    ),
+    var(--card-tint);
+}
+.audience-card-image::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.audience-card-image img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  transition: transform 0.5s ease;
+}
+.audience-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-color);
+  box-shadow: 0 15px 32px rgba(77, 45, 80, 0.12);
+}
+.audience-card:hover .audience-card-image img {
+  transform: scale(1.05);
+}
+.audience-card-copy {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  align-items: start;
+  gap: 17px;
+  padding: 22px 22px 24px;
+}
+.audience-card h3 {
+  color: var(--card-color);
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: -0.035em;
+}
+.audience-card-icon {
+  width: 54px;
+  height: 54px;
+  margin-top: 3px;
+  fill: none;
+  stroke: var(--brand);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+.audience-card-copy p {
+  min-height: 3.2em;
+  margin: 0 0 10px;
+  color: #66596a;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.audience-card-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--brand);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+.audience-card-link b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+.audience-card:hover .audience-card-link b {
+  transform: translateX(3px);
+}
+.audience-card:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 4px;
+}
+.audience-card--senior {
+  --card-tint: #d7e9f5;
+  --card-color: #239ed5;
+  --card-bg: #f2f8fc;
+}
+.audience-card--mom {
+  --card-tint: #fff0df;
+  --card-color: #f28a58;
+  --card-bg: #fff9f1;
+}
+.audience-card--baby {
+  --card-tint: #fde8e8;
+  --card-color: #ed6174;
+  --card-bg: #fff5f5;
+}
+.benefit-band {
+  background: #f9ded8;
+  padding: 48px 0;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+.benefits > div {
+  display: grid;
+  grid-template-columns: 38px auto;
+  column-gap: 13px;
+}
+.benefits span {
+  grid-row: span 2;
+  color: var(--accent);
+  font-size: 1.55rem;
+}
+.benefits h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.benefits p {
+  grid-column: 2;
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.story-section {
+  padding: 110px 0;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  gap: 100px;
+}
+.story-image {
+  height: 380px;
+}
+.story-copy p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 430px;
+}
+.site-footer {
+  position: relative;
+  background: #fff4f1;
+  color: var(--ink);
+  padding: 70px 0 24px;
+  margin-top: 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1.1fr 1.1fr 0.9fr;
+  gap: clamp(24px, 4vw, 58px);
+  padding-bottom: 78px;
+}
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--brand);
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+.footer-brand-mark {
+  width: 56px;
+  height: 56px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+.footer-about > p {
+  max-width: 300px;
+}
+.footer-column {
+  min-width: 0;
+}
+.site-footer .footer-title {
+  margin: 0 0 16px;
+  color: var(--brand);
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.site-footer p,
+.site-footer a {
+  color: #66596a;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  text-decoration: none;
+}
+.footer-pill {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 46px;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid #ffc9c3;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--ink) !important;
+  font-weight: 800;
+  line-height: 1.3 !important;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.footer-pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: #ffffff;
+}
+.footer-pill > span {
+  color: var(--brand);
+  font-size: 1.1rem;
+}
+.footer-socials {
+  display: flex;
+  gap: 11px;
+  margin-top: 22px;
+}
+.footer-socials > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffc9c3;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--brand);
+  font-family: "Nunito", "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.footer-socials svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px dashed #f3c9bd;
+  padding-top: 22px;
+  color: #66596a;
+  font-size: 0.9rem;
+}
+.copyright nav {
+  display: flex;
+  gap: 22px;
+}
+.copyright nav a {
+  color: #66596a;
+  font-size: 0.9rem;
+}
+.copyright nav a:hover {
+  color: var(--brand);
+}
+.back-to-top {
+  position: fixed;
+  z-index: 9;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ffc9c3;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand);
+  font:
+    700 1.2rem "Nunito",
+    "Be Vietnam Pro",
+    sans-serif;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+.back-to-top:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+}
+.category-hero {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+}
+.category-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(55, 33, 59, 0.78),
+    rgba(55, 33, 59, 0.18)
+  );
+}
+.category-hero-content {
+  position: relative;
+}
+.category-hero .eyebrow {
+  color: #ffd2d3;
+}
+.category-hero p:not(.eyebrow) {
+  max-width: 480px;
+  color: #ffffff;
+}
+.elder-hero {
+  background-image: url("https://images.unsplash.com/photo-1447069387593-a5de0862481e?auto=format&fit=crop&w=1700&q=85");
+}
+.mom-hero {
+  background-image: url("https://images.unsplash.com/photo-1543342384-1f1350e27861?auto=format&fit=crop&w=1700&q=85");
+}
+.baby-hero {
+  background-image: url("https://images.unsplash.com/photo-1546015720-b8b30df5aa27?auto=format&fit=crop&w=1700&q=85");
+}
+.product-section {
+  padding: 70px 0 100px;
+}
+.product-heading > p {
+  color: var(--muted);
+  margin: 0;
+}
+.shop-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  margin-bottom: 30px;
+}
+.search-box {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  width: min(100%, 370px);
+  padding: 0 12px;
+  gap: 7px;
+  color: var(--brand);
+}
+.search-box input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  font: inherit;
+}
+.filter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.filter-wrap select {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 9px;
+  font: inherit;
+  color: var(--ink);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 7px 22px rgba(77, 45, 80, 0.04);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  border-color: #ffc9c3;
+  box-shadow: 0 13px 28px rgba(77, 45, 80, 0.1);
+}
+.product-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.05;
+  border-radius: 15px;
+  background: #fff4f1;
+}
+.product-image > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 8px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+.product-card:hover .product-image > img {
+  transform: scale(1.035);
+}
+.product-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  background: rgba(77, 45, 80, 0.08);
+  transition: opacity 0.2s ease;
+}
+.product-card:hover .product-actions,
+.product-card:focus-within .product-actions {
+  opacity: 1;
+}
+.product-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--brand);
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(77, 45, 80, 0.1);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+.product-action:hover,
+.product-action[aria-pressed="true"] {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+.product-action svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+.product-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 12px;
+  text-align: center;
+}
+.product-type {
+  display: none;
+}
+.product-name {
+  font-weight: 900;
+  font-size: 1.12rem;
+  line-height: 1.42;
+  min-height: 3.1em;
+  margin-bottom: 4px;
+}
+.price {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.product-buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 1px solid #ffc9c3;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.product-buy:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #ffffff;
+}
+.empty-results {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 45px;
+  background: #ffffff;
+  border-radius: 12px;
+  color: var(--muted);
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 36px;
+}
+.pagination button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  font:
+    700 0.85rem "Nunito",
+    "Be Vietnam Pro",
+    sans-serif;
+  cursor: pointer;
+}
+.pagination button.active,
+.pagination button:hover {
+  color: #fff;
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.contact-hero {
+  padding: 82px 0;
+  background:
+    radial-gradient(
+      ellipse at 90% 15%,
+      rgba(248, 201, 202, 0.5),
+      transparent 40%
+    ),
+    var(--bg);
+}
+.contact-hero h1 {
+  color: #ee3e80;
+}
+.contact-hero > div > p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 450px;
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+  padding: 85px 0 105px;
+}
+.contact-details h2,
+.contact-form h2 {
+  font-size: 1.65rem;
+}
+.contact-details > div {
+  display: flex;
+  gap: 15px;
+  margin: 24px 0;
+}
+.contact-details span {
+  color: var(--brand);
+  font-size: 1.25rem;
+}
+.contact-details p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+.contact-details b {
+  display: block;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.contact-form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 12px 32px rgba(77, 45, 80, 0.07);
+}
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin: 17px 0;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  font:
+    400 0.9rem "Nunito",
+    "Be Vietnam Pro",
+    sans-serif;
+  outline-color: var(--brand);
+  resize: vertical;
+}
+.form-message {
+  font-size: 0.84rem;
+  color: var(--brand);
+  margin: 12px 0 0;
+}
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 32px, 1200px);
+  }
+  .site-header {
+    padding: 6px 0 10px;
+  }
+  .header-topline {
+    min-height: 28px;
+    font-size: 0.7rem;
+  }
+  .header-topline span {
+    max-width: 58%;
+  }
+  .nav {
+    min-height: 62px;
+    padding: 0 18px;
+    border-radius: 17px;
+  }
+  .site-header .brand {
+    font-size: 1.8rem;
+  }
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 20px rgba(77, 45, 80, 0.12);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 9px;
+  }
+  .hero {
+    padding: 35px 0 60px;
+  }
+  .hero-grid,
+  .story-section,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .hero-image {
+    height: clamp(260px, 70vw, 380px);
+    order: 0;
+    border-radius: 34% 20px 34% 20px;
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 10vw, 3.4rem);
+  }
+  .audience-section,
+  .story-section {
+    padding: 65px 0;
+  }
+  .section-heading,
+  .product-heading {
+    display: block;
+  }
+  .section-heading > p {
+    margin-top: 12px;
+  }
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+  .audience-card {
+    min-height: 0;
+  }
+  .audience-card-image {
+    height: clamp(200px, 58vw, 280px);
+  }
+  .audience-card-copy {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 13px;
+    padding: 18px 18px 21px;
+  }
+  .audience-card-icon {
+    width: 46px;
+    height: 46px;
+  }
+  .benefits {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .story-image {
+    height: 285px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .product-card {
+    padding: 9px;
+  }
+  .product-info {
+    padding: 15px 6px 8px;
+  }
+  .product-name {
+    font-size: 0.96rem;
+  }
+  .product-buy {
+    min-height: 40px;
+    padding: 0 16px;
+  }
+  .shop-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .filter-wrap {
+    justify-content: space-between;
+  }
+  .category-hero {
+    min-height: 300px;
+  }
+  .contact-layout {
+    padding: 58px 0;
+  }
+  .contact-form {
+    padding: 23px;
+  }
+}
+@media (max-width: 400px) {
+  .header-topline span {
+    max-width: 100%;
+  }
+  .header-topline a {
+    font-size: 0;
+  }
+  .header-topline a::after {
+    content: "Liên hệ";
+    font-size: 0.7rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .trust-row {
+    gap: 12px;
+    font-size: 0.68rem;
+  }
+  .trust-row span + span {
+    padding-left: 12px;
+  }
+  .hero-actions {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
