@@ -1,26 +1,26 @@
 {
-  "siteName": "MEBE | Tạp hóa cho cả nhà",
-  "defaultDescription": "MEBE - Cửa hàng tạp hóa tận tâm cho người cao tuổi, mẹ bỉm và bé.",
+  "siteName": "MaiChinh Kids | Tạp hóa cho cả nhà",
+  "defaultDescription": "MaiChinh Kids - Cửa hàng tạp hóa tận tâm cho người cao tuổi, mẹ bỉm và bé.",
   "pages": {
     "home": {
-      "title": "MEBE | Tạp hóa cho cả nhà",
+      "title": "MaiChinh Kids | Tạp hóa cho cả nhà",
       "description": "Cửa hàng tạp hóa tận tâm cho mọi thành viên trong gia đình."
     },
     "senior": {
-      "title": "Sản phẩm cho người cao tuổi | MEBE",
+      "title": "Sản phẩm cho người cao tuổi | MaiChinh Kids",
       "description": "Sản phẩm chăm sóc sức khỏe và sinh hoạt cho người cao tuổi."
     },
     "mom": {
-      "title": "Sản phẩm cho mẹ bỉm | MEBE",
+      "title": "Sản phẩm cho mẹ bỉm | MaiChinh Kids",
       "description": "Sản phẩm thiết thực, dịu nhẹ cho mẹ bỉm."
     },
     "baby": {
-      "title": "Sản phẩm cho em bé | MEBE",
+      "title": "Sản phẩm cho em bé | MaiChinh Kids",
       "description": "Sản phẩm dịu lành, tiện dụng dành cho bé."
     },
     "contact": {
-      "title": "Liên hệ | MEBE",
-      "description": "Liên hệ MEBE để được hỗ trợ và tư vấn sản phẩm."
+      "title": "Liên hệ | MaiChinh Kids",
+      "description": "Liên hệ MaiChinh Kids để được hỗ trợ và tư vấn sản phẩm."
     }
   }
 }
